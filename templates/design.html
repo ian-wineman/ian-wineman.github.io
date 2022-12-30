@@ -1,12 +1,10 @@
 <!DOCTYPE html>
-
 <html>
   <head>
     <title>
       Title
     </title>
     <style>
-
       body { 
         background-color: lavender; 
       }
@@ -22,10 +20,27 @@
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       }
 
+      ::selection {
+        background: lavender;
+        color: white;
+      }
+
       mark {
         opacity: 50%;
       }
-    
+
+      a:visited {
+        color: blue;
+      }
+
+      a:hover {
+        opacity: 75%;
+      }
+
+      a:active {
+        opacity: 50%;
+      }
+
       blockquote {
         border-left: lightgray solid 0.25em;
         margin-left: 0em;
@@ -53,6 +68,30 @@
         list-style-position: outside;
         margin-left: 1.5em;
       }
+
+      ol.footnotes > li {
+        margin: 1em;
+      }
+
+      ol.footnotes > li:nth-child(1) {
+        list-style: "[1]    ";
+        list-style-position: outside;
+        margin-left: 1.5em;
+      }
+
+      ol.footnotes > li:nth-child(2) {
+        list-style: "[2]    ";
+        list-style-position: outside;
+        margin-left: 1.5em;
+      }
+
+      /*
+      ol.footnotes > li:nth-child(3) {
+        list-style: "[3]    ";
+        list-style-position: outside;
+        margin-left: 1.5em;
+      }
+      */
     
       code {
         background-color: lightgray;
@@ -101,7 +140,7 @@
       Plain text. <b>Bold Text.</b> <i>Italic Text.</i> <mark>Highlighted Text.</mark> <u>Underlined Text.</u> <sup>Superscript Text.</sup> <sub>Subscript Text.</sub>
 
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et <a href="">dolore</a> magna aliqua. 
         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
         Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -210,11 +249,18 @@
       </p>
 
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Lorem ipsum dolor sit amet<sup><a href="">[1]</a></sup>, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
         Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
+
+      <div class="footnotes">
+        <ol class="footnotes">
+          <li>Footnote one text. <a href="">&hookleftarrow;</a></li>
+          <li>Footnote two text. <a href="">&hookleftarrow;</a></li>
+        </ol>
+      </div>
 
     </div>
 
