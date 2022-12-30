@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+<html>
+  
+  <style>
+
+    body { 
+      background-color: lavender; 
+    }
+  
+    .main {
+      background-color: white;
+      border-radius: 0.5em;
+      max-width: 40em;
+      margin: auto;
+      border-style: solid;
+      border-color: lightgray;
+      padding: 0em 1em 1em 1em;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    mark {
+      opacity: 50%;
+    }
+  
+    blockquote {
+      border-left: lightgray solid 0.25em;
+      margin-left: 0em;
+      background-color: rgb(245, 245, 245);
+      margin-right: 0em;
+    }
+  
+    .blockquote {
+      margin-left: 1em;
+      padding-top: 1em;
+      padding-bottom: 1em;
+    }
+  
+    .callout {
+      background-color: rgb(245, 245, 245);
+      border-radius: 0.5em;
+      padding: 0.1em 0.5em 0.1em 0.5em;
+    }
+    
+    ul.callout > li:nth-child(1) {
+      list-style: "\1F4A1    "; /* Light bulb: \1F4A1 */
+                                /* Red light:  \1F6A8 */
+                                /* Goal:       \1F945 */
+                                /* Unicorn:    \1F984 */
+      list-style-position: outside;
+      margin-left: 1.5em;
+    }
+  
+    code {
+      background-color: lightgray;
+      color: crimson;
+      padding: 0.1em 0.2em 0.1em 0.2em;
+      border-radius: 0.25em;
+      font-family: monospace;
+    }
+  
+    .codeblock {
+      background-color: rgb(245, 245, 245);
+      padding: 0.5em;
+      border-radius: 0.5em;
+      font-family: monospace;
+      font-size: large;
+    }
+  
+    hr {
+      border-top: dotted 0.25em black;
+      max-width: 80%;
+    }
+  
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    figcaption {
+      text-align: center;
+    }
+    
+  </style>
+  
+  <body>
+    <div class="main">
+      <h1>Header One</h1>
+  
+      <h2>Header Two</h2>
+  
+      <h3>Header Three</h3>
+  
+      <h4>Header Four</h4>
+
+      Plain text. <b>Bold Text.</b> <i>Italic Text.</i> <mark>Highlighted Text.</mark> <u>Underlined Text.</u> <sup>Superscript Text.</sup> <sub>Subscript Text.</sub>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+
+      <blockquote>
+        <p class="blockquote">
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          <br><br>
+          - Anonymous
+        </p>
+      </blockquote>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+
+      <hr>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+
+      <div class="callout">
+        <ul class="callout">
+          <li>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </li>
+        </ul>
+      </div>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+
+      <p>
+        Lorem ipsum dolor sit amet, <code>curl -4 8.8.8.8</code> adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+
+      <ul>
+        <li>Alpha</li>
+        <li>Bravo</li>
+        <li>Charlie</li>
+      </ul>
+      <ol>
+        <li>Alpha</li>
+        <li>Bravo</li>
+        <li>Charlie</li>
+      </ol>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      
+      <div class="codeblock">
+        import numpy as np
+        <br><br>
+        print("Hello, world!")
+      </div>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+
+      <figure>
+        <img src="picbreeder01.png">
+        <figcaption>Image generated with Picbreeder</figcaption>
+      </figure>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      <p>
+        When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are
+        \[x = {-b \pm \sqrt{b^2-4ac} \over 2a}.\]
+      </p>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+
+    </div>
+
+  </body>
+
+</html>
