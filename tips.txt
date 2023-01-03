@@ -1,3 +1,4 @@
 echo 'source <(kubectl completion bash)' >>~/.bashrc # k8s bash
 echo 'alias k=kubectl' >>~/.bashrc # k8s bash
 echo 'complete -o default -F __start_kubectl k' >>~/.bashrc # k8s bash
+exec bash # k8s bash
